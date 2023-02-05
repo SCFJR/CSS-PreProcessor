@@ -1,3 +1,5 @@
+$mycolor: black;
+
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +12,13 @@ header {
     
     h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: black;
+        color: $mycolor;
         font-size: 30px;
 
     }
 
     p {
+        color: $mycolor;
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
