@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
 }
-* header {
+
+header {
   background-color: #ddd;
 }
-* header h1 {
+header h1 {
   color: white;
 }/*# sourceMappingURL=main.css.map */
