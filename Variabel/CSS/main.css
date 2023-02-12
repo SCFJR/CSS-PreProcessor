@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 50px;
+}
+
+.container2 {
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: #000;
+}
+.container2 .header2 {
+  padding: 10px;
+}
+.container2 .header2 h1 {
+  color: #ddd;
+  padding-bottom: 5px;
+}
+.container2 .header2 p {
+  color: #ddd;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+.container .header {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #000;
+}
+.container .header h1 {
+  color: #ddd;
+  padding-bottom: 5px;
+}
+.container .header p {
+  color: #ddd;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container3 {
+  margin-bottom: 30px;
+}
+.container3 .header3 {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #000;
+}
+.container3 .header3 h1 {
+  color: #ddd;
+  padding-bottom: 5px;
+}
+.container3 .header3 p {
+  color: #ddd;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container4 {
+  margin-bottom: 30px;
+}
+.container4 .header4 {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #000;
+}
+.container4 .header4 h1 {
+  color: yellow;
+  padding-bottom: 5px;
+}
+.container4 .header4 p {
+  color: yellow;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}/*# sourceMappingURL=main.css.map */

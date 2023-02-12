@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 50px;
+}
+
+// CSS Variabel
+
+// :root {
+//   --color-bg: #ddd;
+//   --text-color: #000;
+//   --color-deafault: #000;
+// }
+
+// .container {
+//   header {
+//     background-color: var(--color-bg);
+//     h1 {
+//       color: var(--text-color);
+//     }
+//     p {
+//         color: var(--text-color);
+//     }
+//   }
+// }
+
+// SCSS Variabel Global
+// Variabel Ini Bisa Digunakan Di Semua Element
+
+$color-bg: #ddd;
+$text-color: #000;
+$color-deafault: #000;
+
+.container2 {
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: $color-deafault;
+  .header2 {
+    padding: 10px;
+    h1 {
+      color: $color-bg;
+      padding-bottom: 5px;
+    }
+    p {
+      color: $color-bg;
+      letter-spacing: 1px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+
+// SCSS Variabel Nesting ( Lokal )
+// Variabel Ini Tidak Bisa Digunakan Di Semua Element (Global)
+
+$color-bg: #ddd;
+$text-color: #000;
+$color-deafault: #000;
+
+body {
+  $bground-Color: #ddd;
+  background-color: $bground-Color;
+}
+
+.container {
+  margin-bottom: 30px;
+  .header {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: $color-deafault;
+    h1 {
+      // Tidak Berfungsi Menggunakan Variabel ini
+      // [ color: $bground-Color; ]
+      color: $color-bg;
+      padding-bottom: 5px;
+    }
+    p {
+      color: $color-bg;
+      letter-spacing: 1px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+
+// SCSS Variabel Nesting ( !global )
+// Variabel Ini Bisa Digunakan Di Semua Element (Global)
+
+body {
+  $bg-Color: #ddd !global;
+  background-color: $bg-Color;
+}
+
+.container3 {
+  margin-bottom: 30px;
+  .header3 {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: $color-deafault;
+    h1 {
+      // Berfungsi Menggunakan Variabel ini
+      // [ color: $bg-Color; ]
+      color: $bg-Color;
+      padding-bottom: 5px;
+    }
+    p {
+      color: $bg-Color;
+      letter-spacing: 1px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+
+// Variabel Global Digunakan Oleh Element Diluar Dari Variabel Lokal
+// Variabel Global Yang Ketika Digunakaan Di Luar Dari Variabel Lokal Akan Berfungsi Seperti Variabel Global Yang Tersedia Sebelumnya
+// Variabel Lokal Yang Hanya Bisa Digunakan Di Dalam Element Yang Sudah Ada Variabel Lokal
+// Variabel Lokal Akan Berfungsi Didalam Salah Satu Element ( body ) Karena Termasuk Variabel Lokal
+
+// Global
+$color-bg: yellow;
+$text-color: #000;
+$color-deafault: #000;
+
+// Lokal
+// Menggunakan Variabel Lokal
+body {
+  $bg-Color: #ddd;
+  background-color: $bg-Color;
+}
+
+// Menggunakan Variabel Global
+.container4 {
+  margin-bottom: 30px;
+  .header4 {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: $color-deafault;
+    h1 {
+      // Berfungsi Menggunakan Variabel ini
+      // [ color: $bg-Color; ]
+      color: $color-bg;
+      padding-bottom: 5px;
+    }
+    p {
+      color: $color-bg;
+      letter-spacing: 1px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
