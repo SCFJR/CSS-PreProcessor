@@ -1,5 +1,5 @@
-# CSS-PreProcessor
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" width="300px" height="300px"/>
+<h1 align="center">CSS-PreProcessor</h1>
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" width="300px" height="300px"/><p>
 <h2>Di Repository Ini Berisi Materi Tentang CSS PreProcessor Atau Lebih Dikenal Dengan SASS / SCSS</h2>
 <br>
 <h2>Apa Itu CSS PreProcessor ?</h2>
