@@ -1,0 +1,109 @@
+// Reset
+body {
+  margin: 50px;
+  padding: 0;
+  min-height: 1000px;
+}
+
+// Style if
+@mixin profile-pict($size, $circle: false) {
+  width: $size;
+  height: $size;
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px #ddd;
+
+  @if $circle {
+    border-radius: 50%;
+  }
+}
+
+.square {
+  @include profile-pict(300px, $circle: false)
+}
+
+.circle {
+  @include profile-pict(300px, $circle: true)
+}
+
+// style else
+$light-bg: #ddd;
+$light-txt: #0000;
+$dark-bg: rgb(58, 58, 58);
+$dark-txt: white;
+
+@mixin color-mode($light-mode: true) {
+  @if $light-bg {
+    background-color: $light-bg;
+    color: $light-txt;
+  }
+
+  @else {
+    background-color: $dark-bg;
+    color: $dark-txt;
+  }
+}
+
+.nav {
+  @include color-mode($light-mode: false)
+}
+
+//style else if
+@mixin triangle($size, $color, $direction) {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: $size;
+
+  @if $direction==up {
+    border-bottom-color: $color;
+  }
+
+  @else if $direction==right {
+    border-left-color: $color;
+  }
+
+  @else if $direction==down {
+    border-top-color: $color;
+  }
+
+  @else {
+    border-right-color: $color;
+  }
+}
+
+.left {
+  @include triangle(2em, black, right)
+}
+
+// for
+$color: rgb(111, 0, 255);
+
+.gradient {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @for $i from 1 to 11 {
+    li:nth-child(#{$i}) {
+      padding: 5px;
+      background-color: lighten($color, $i * 3%);
+    }
+  }
+}
+
+// each 
+$social-color: (youtube: #ff0000, instagram: #fa003e, facebook: #3b5998, twitter: #1da1f2, );
+
+.socials {
+  font-family: arial;
+  font-weight: bold;
+
+  @each $social,
+  $color in $social-color {
+    .#{$social} {
+      color: $color;
+    }
+  }
+}
