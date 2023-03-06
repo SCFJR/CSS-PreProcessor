@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: salmon;
+  text-align: center;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adjust($color, 
+$red: null, 
+$green: null, 
+$blue: null, 
+$hude: null, 
+$saturation: null, 
+$lightness: null, 
+$whiteness: null, 
+$blackness: null, 
+$alpha: null ) */
+.satu {
+  color: #ff8a86;
+}
+
+.dua {
+  color: #faad72;
+}
+
+.tiga {
+  color: #72ecfa;
+}
+
+.empat {
+  color: #f7270f;
+}
+
+.lima {
+  color: #fcaca3;
+}
+
+.enam {
+  color: #ff7c6d;
+}
+
+.tujuh {
+  color: #d69d97;
+}
+
+.delapan {
+  color: #b6b6b6;
+}
+
+.sembilan {
+  color: #964daa;
+}
+
+.sepuluh {
+  color: salmon;
+}
+
+.sebelas {
+  color: rgba(250, 128, 114, 0.5);
+}/*# sourceMappingURL=main.css.map */

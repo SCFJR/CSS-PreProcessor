@@ -1,0 +1,95 @@
+// reset
+
+body {
+    margin: 0;
+    padding: 0;
+    // background-color: #ddd;
+}
+
+// style
+
+$warna-dasar: salmon;
+
+h1 {
+    color: $warna-dasar;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// Build IN Function / Modules (Color)
+
+/* Adjust($color, 
+$red: null, 
+$green: null, 
+$blue: null, 
+$hude: null, 
+$saturation: null, 
+$lightness: null, 
+$whiteness: null, 
+$blackness: null, 
+$alpha: null ) */
+
+.satu {
+    color: adjust-color($color: $warna-dasar, $green: 10, $red: 50, $blue: 20, );
+}
+
+// Adjust-hue:($color, $degree);
+
+.dua {
+    color: adjust-hue($warna-dasar, $degrees: 20deg);
+}
+
+// Complement($color)
+
+.tiga {
+    color: complement($warna-dasar);
+}
+
+// darken($color, $amount)
+
+.empat {
+    color: darken($warna-dasar, $amount: 20%);
+}
+
+// lighten($color, $amount)
+
+.lima {
+    color: lighten($warna-dasar, $amount: 10%);
+}
+
+// saturate($color, $amount)
+
+.enam {
+    color: saturate($warna-dasar, $amount: 50%);
+}
+
+// desaturate($color, $amount)
+
+.tujuh {
+    color: desaturate($warna-dasar, $amount: 50%);
+}
+
+// grayscale($color)
+
+.delapan {
+    color: grayscale($warna-dasar);
+}
+
+// mix($color, $color2, $weight:)
+
+.sembilan {
+    color: mix($warna-dasar, blue, $weight: 60%);
+}
+
+// fade-in($color, $amount)
+
+.sepuluh {
+    color: fade-in($warna-dasar, $amount: 0.5);
+}
+
+// fade-out($color, $amount)
+
+.sebelas {
+    color: fade-out($warna-dasar, $amount: 0.5);
+}
